@@ -1,0 +1,36 @@
+h1 {
+    color: indianred;
+}
+
+.person {
+    display: none;
+}
+
+.current-person {
+    display: block;
+}
+
+/*
+.nav-row{
+    display: inline;
+}*/
+
+.btn-previous {
+    float: left;
+}
+
+.btn-next {
+    float: right;
+}
+
+li {
+    display: inline;
+}
+
+.dot {
+    font-size: 15px;
+}
+
+.current-dot {
+    font-size: 20px;
+}
