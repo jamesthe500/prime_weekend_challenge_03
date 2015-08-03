@@ -6,16 +6,18 @@ $(document).ready(function(){
             console.log(data);
             console.log(Object.keys(data).length);
             $.each(data, function () {
-                $('.people').append('<div class="person"><div><h5>' + this.name + '</h5></div><div><p>' + this.desc + '</p></div><div><p><em>' + this.thanks + '</em></p></div></div>');
+                $('.people').append('<div class="person"><div><h3>' + this.name + '</h3></div><div><p>' + this.desc + '</p></div><div><p><em><b class="quotes">“ </b>' + this.thanks + '<b class="quotes"> ”</b></em></p></div></div>');
             });
             $('.person').first().addClass('current-person');
             for (i = 0; i < Object.keys(data).length; i++) {
-                $('ul').append('<li class="dot">&bull;</li>');
+                $('ul').append('<span class="dot glyphicon glyphicon-asterisk" aria-hidden="true"></span>');
             }
 
-            $('li').first().addClass('current-dot');
+            $('.dot').first().addClass('current-dot');
         }
     });
+
+
 
     $('.btn-next').on('click', function(){
         var currentPerson = $('.current-person');
@@ -50,7 +52,7 @@ $(document).ready(function(){
         var currentDot = $('.current-dot');
         var nextDot = currentDot.prev();
         if (nextDot.length == 0){
-            nextDot = $('li').last();
+            nextDot = $('.dot').last();
         }
         currentDot.removeClass('current-dot');
         nextDot.addClass('current-dot');

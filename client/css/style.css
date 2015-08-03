@@ -1,36 +1,53 @@
+html, body, .people, .container, .row  {
+    max-width: 500px;
+    margin: 5px auto;
+}
+
+.nav-row {
+    width: 500px;
+}
+
 h1 {
     color: indianred;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin: 5px auto 8px;
 }
 
 .person {
     display: none;
+    max-width: 500px;
+    border: 2px solid #000080;
+    background-color: #31b0d5;
+    border-radius: 7px;
+    padding: 10px;
 }
 
 .current-person {
     display: block;
 }
 
-/*
-.nav-row{
-    display: inline;
-}*/
-
-.btn-previous {
-    float: left;
+.nav-row {
+    display: inline-block;
+    margin:5px;
 }
 
-.btn-next {
-    float: right;
-}
-
-li {
+ul, .btn{
     display: inline;
+    float: none !important;
 }
 
 .dot {
-    font-size: 15px;
+    color: #696969;
 }
 
 .current-dot {
-    font-size: 20px;
+    color: #991111;
+}
+
+.quotes {
+    font-size: 15px;
 }

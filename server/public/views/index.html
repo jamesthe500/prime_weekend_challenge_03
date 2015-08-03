@@ -11,13 +11,18 @@
 <body>
     <div class="container">
         <h1>Gamma Cohort Carousel</h1>
+        <div class="nav-row row col-md-12">
+            <button type="button" class="btn btn-default btn-previous col-md-1" aria-label="Previous Slide">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </button>
 
-        <div class="people"></div>
-        <div class="nav-row row-fluid">
-            <button class="btn-previous"> < </button>
-            <div class="dots"><ul></ul></div>
-            <button class="btn-next"> > </button>
+            <ul class="dots col-md-10"></ul>
+            <button type="button" class="btn btn-default btn-next col-md-1" aria-label="Next Slide">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </button>
         </div>
+        <div class="row people"></div>
+
     </div>
 </body>
 </html>
