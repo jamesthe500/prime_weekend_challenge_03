@@ -7,7 +7,6 @@ html, body, .people, .container, .row  {
     width: 500px;
 }
 
-
 h1 {
     color: indianred;
     text-align: center;
@@ -15,7 +14,7 @@ h1 {
 
 h3 {
     text-align: center;
-    margin: 3px auto 5px;
+    margin: 5px auto 8px;
 }
 
 .person {
@@ -29,19 +28,6 @@ h3 {
 
 .current-person {
     display: block;
-}
-
-/*
-.nav-row{
-    display: inline;
-}*/
-
-.btn-previous {
-
-}
-
-.btn-next {
-
 }
 
 .nav-row {

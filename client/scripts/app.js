@@ -9,7 +9,7 @@ $(document).ready(function(){
                 $('.people').append('<div class="person"><div><h3>' + this.name + '</h3></div><div><p>' + this.desc + '</p></div><div><p><em><b class="quotes">“ </b>' + this.thanks + '<b class="quotes"> ”</b></em></p></div></div>');
             });
             $('.person').first().addClass('current-person');
-            for (i = 0; i < Object.keys(data).length; i++) {
+            for (var i = 0; i < Object.keys(data).length; i++) {
                 $('ul').append('<span class="dot glyphicon glyphicon-asterisk" aria-hidden="true"></span>');
             }
 
@@ -32,7 +32,7 @@ $(document).ready(function(){
         var currentDot = $('.current-dot');
         var nextDot = currentDot.next();
         if (nextDot.length == 0){
-            nextDot = $('li').first();
+            nextDot = $('.dot').first();
         }
         currentDot.removeClass('current-dot');
         nextDot.addClass('current-dot');
